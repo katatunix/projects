@@ -1,0 +1,14 @@
+Options All -Indexes
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^www.gaby-shop.com$ [NC]
+RewriteRule ^(.*)$ http://gaby-shop.com/$1 [R=301,L]
+
+RewriteRule ^product/([^/]*)/*$ index.php?k=product/&seo_url=$1 [L]
+RewriteRule ^promo/([^/]*)/*$ index.php?k=promo/&seo_url=$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php?k=$1 [L,QSA]

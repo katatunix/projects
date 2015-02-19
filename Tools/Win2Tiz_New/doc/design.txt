@@ -1,0 +1,12 @@
+Program
+
+Agent
+
+Session
+
+Remote
+	- constructor: get hostname and port
+	- connect to host by hostname and port
+	- know current state (ERemoteState)
+	- know the connecting is allow (canConnect)
+	- compile a com

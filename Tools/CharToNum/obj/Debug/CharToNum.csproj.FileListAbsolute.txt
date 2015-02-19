@@ -1,0 +1,8 @@
+C:\Users\Katatunix\Documents\Visual Studio 2008\Projects\CharToNum\bin\Debug\CharToNum.exe
+C:\Users\Katatunix\Documents\Visual Studio 2008\Projects\CharToNum\bin\Debug\CharToNum.pdb
+C:\Users\Katatunix\Documents\Visual Studio 2008\Projects\CharToNum\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Katatunix\Documents\Visual Studio 2008\Projects\CharToNum\obj\Debug\CharToNum.Form1.resources
+C:\Users\Katatunix\Documents\Visual Studio 2008\Projects\CharToNum\obj\Debug\CharToNum.Properties.Resources.resources
+C:\Users\Katatunix\Documents\Visual Studio 2008\Projects\CharToNum\obj\Debug\CharToNum.csproj.GenerateResource.Cache
+C:\Users\Katatunix\Documents\Visual Studio 2008\Projects\CharToNum\obj\Debug\CharToNum.exe
+C:\Users\Katatunix\Documents\Visual Studio 2008\Projects\CharToNum\obj\Debug\CharToNum.pdb

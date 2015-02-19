@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<resort>
+		<name>Ha Noi City</name>
+		<key>1234</key>
+		<wsdl>http://localhost/luxury/res/public/luxury.wsdl</wsdl>
+	</resort>
+
+	<resort>
+		<name>Da Nang City</name>
+		<key>1234</key>
+		<wsdl>http://localhost/luxury/res/public/luxury.wsdl</wsdl>
+	</resort>
+</root>

@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\auto_generated\images_define.cpp" />
+    <ClCompile Include="..\..\src\auto_generated\sprites_define.cpp" />
+    <ClCompile Include="..\..\src\CGame.cpp" />
+    <ClCompile Include="..\..\src\Entity\Entity.cpp" />
+    <ClCompile Include="..\..\src\Entity\Goomba.cpp" />
+    <ClCompile Include="..\..\src\Entity\InvisibleKiller.cpp" />
+    <ClCompile Include="..\..\src\Entity\Koopa.cpp" />
+    <ClCompile Include="..\..\src\Entity\Mushroom.cpp" />
+    <ClCompile Include="..\..\src\Entity\Particle.cpp" />
+    <ClCompile Include="..\..\src\Entity\Player.cpp" />
+    <ClCompile Include="..\..\src\GameObject.cpp" />
+    <ClCompile Include="..\..\src\GameState\GS_InGame.cpp" />
+    <ClCompile Include="..\..\src\GameState\GS_Logo.cpp" />
+    <ClCompile Include="..\..\src\Tile\Background.cpp" />
+    <ClCompile Include="..\..\src\Tile\NormalBrick.cpp" />
+    <ClCompile Include="..\..\src\Tile\Map.cpp" />
+    <ClCompile Include="..\..\src\Tile\QuestionBrick.cpp" />
+    <ClCompile Include="..\..\src\Widget\NavButtonWidget.cpp" />
+    <ClCompile Include="..\..\src\Widget\PlayingButtonWidget.cpp" />
+    <ClCompile Include="..\..\src\World.cpp" />
+    <ClCompile Include="..\..\src\_android\file_utils.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\_android\jni_game.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\_win32\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\auto_generated\game_objects_list.h" />
+    <ClInclude Include="..\..\src\auto_generated\images_define.h" />
+    <ClInclude Include="..\..\src\auto_generated\sprites_define.h" />
+    <ClInclude Include="..\..\src\CGame.h" />
+    <ClInclude Include="..\..\src\Entity\Entity.h" />
+    <ClInclude Include="..\..\src\Entity\Goomba.h" />
+    <ClInclude Include="..\..\src\Entity\InvisibleKiller.h" />
+    <ClInclude Include="..\..\src\Entity\Koopa.h" />
+    <ClInclude Include="..\..\src\Entity\Mushroom.h" />
+    <ClInclude Include="..\..\src\Entity\Particle.h" />
+    <ClInclude Include="..\..\src\Entity\Player.h" />
+    <ClInclude Include="..\..\src\GameObject.h" />
+    <ClInclude Include="..\..\src\GameObjectPool.h" />
+    <ClInclude Include="..\..\src\GameState\GS_InGame.h" />
+    <ClInclude Include="..\..\src\GameState\GS_Logo.h" />
+    <ClInclude Include="..\..\src\ImageManager.h" />
+    <ClInclude Include="..\..\src\SpriteManager.h" />
+    <ClInclude Include="..\..\src\Tile\Background.h" />
+    <ClInclude Include="..\..\src\Tile\NormalBrick.h" />
+    <ClInclude Include="..\..\src\Tile\Map.h" />
+    <ClInclude Include="..\..\src\Tile\QuestionBrick.h" />
+    <ClInclude Include="..\..\src\Tile\TiledObject.h" />
+    <ClInclude Include="..\..\src\Tile\tile_define.h" />
+    <ClInclude Include="..\..\src\Widget\NavButtonWidget.h" />
+    <ClInclude Include="..\..\src\Widget\PlayingButtonWidget.h" />
+    <ClInclude Include="..\..\src\World.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4B3673B4-C61D-4E2D-9AE1-840C65E86608}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Gata_Test</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\bin\</OutDir>
+    <TargetName>$(ProjectName)_D</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\Gata\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\..\Gata\prj\win32\Debug;..\..\..\Gata\lib\gles20;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Gata.lib;libEGL.lib;libGLESv2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

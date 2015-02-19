@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="src\gata">
+      <UniqueIdentifier>{e617b69c-436c-41ec-910a-6244b31a002d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gata\filesystem">
+      <UniqueIdentifier>{66f4deff-5436-4599-89e0-0d7f94f992a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gata\graphic">
+      <UniqueIdentifier>{fba990bc-1f35-410b-a414-e25931652729}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gata\sound">
+      <UniqueIdentifier>{3d6c1f13-da2c-4250-a993-7570cb30eba8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gata\sprite">
+      <UniqueIdentifier>{a94932d7-1009-4aff-adb4-5b980b0b7fb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gata\widget">
+      <UniqueIdentifier>{2185dc6d-416c-41f7-8db2-28aa9d364fb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gata\game">
+      <UniqueIdentifier>{96122d2a-96a0-46cf-8579-8895b4022b4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\jsoncpp">
+      <UniqueIdentifier>{0b17f139-5f70-442c-b74c-cd32a2b94a02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tinyxml">
+      <UniqueIdentifier>{9c0b0681-c106-4443-8bc3-1218005b0524}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="inc\gata">
+      <UniqueIdentifier>{bf019be8-234e-4ea8-98c3-1987e3a49005}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\gata\filesystem">
+      <UniqueIdentifier>{f99b90c2-41af-48fe-bead-973bfbca33dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\gata\graphic">
+      <UniqueIdentifier>{585d3b4c-feff-4251-b319-045629a12a44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\gata\game">
+      <UniqueIdentifier>{be97e551-eaf5-4843-9aa2-f0446c70c940}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\gata\widget">
+      <UniqueIdentifier>{a1d64686-2ad7-4e86-b748-9825ba9b9278}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\gata\sprite">
+      <UniqueIdentifier>{cb0d1794-b665-42a9-8303-d2424b839f2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\gata\sound">
+      <UniqueIdentifier>{9a2e1a02-ec6d-4fa4-a484-c32ccee52337}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\gata\core">
+      <UniqueIdentifier>{6d329af7-3634-492f-8366-20c0fe7900a9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\tinyxml\tinystr.cpp">
+      <Filter>src\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tinyxml\tinyxml.cpp">
+      <Filter>src\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tinyxml\tinyxmlerror.cpp">
+      <Filter>src\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tinyxml\tinyxmlparser.cpp">
+      <Filter>src\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\jsoncpp\json_reader.cpp">
+      <Filter>src\jsoncpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\jsoncpp\json_value.cpp">
+      <Filter>src\jsoncpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\jsoncpp\json_writer.cpp">
+      <Filter>src\jsoncpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gata\filesystem\FileSystem.cpp">
+      <Filter>src\gata\filesystem</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\tinyxml\tinystr.h">
+      <Filter>src\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tinyxml\tinyxml.h">
+      <Filter>src\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\jsoncpp\autolink.h">
+      <Filter>src\jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\jsoncpp\config.h">
+      <Filter>src\jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\jsoncpp\features.h">
+      <Filter>src\jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\jsoncpp\forwards.h">
+      <Filter>src\jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\jsoncpp\json.h">
+      <Filter>src\jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\jsoncpp\json_batchallocator.h">
+      <Filter>src\jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\jsoncpp\reader.h">
+      <Filter>src\jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\jsoncpp\value.h">
+      <Filter>src\jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\jsoncpp\writer.h">
+      <Filter>src\jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\gata\filesystem\IFileSystem.h">
+      <Filter>inc\gata\filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\gata\filesystem\FileSystem.h">
+      <Filter>inc\gata\filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\gata\core\Ref.h">
+      <Filter>inc\gata\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\gata\core\Size.h">
+      <Filter>inc\gata\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\gata\core\Singleton.h">
+      <Filter>inc\gata\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\gata\core\Point.h">
+      <Filter>inc\gata\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\gata\graphic\IGraphic.h">
+      <Filter>inc\gata\graphic</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\jsoncpp\json_internalarray.inl">
+      <Filter>src\jsoncpp</Filter>
+    </None>
+    <None Include="..\..\src\jsoncpp\json_internalmap.inl">
+      <Filter>src\jsoncpp</Filter>
+    </None>
+    <None Include="..\..\src\jsoncpp\json_valueiterator.inl">
+      <Filter>src\jsoncpp</Filter>
+    </None>
+  </ItemGroup>
+</Project>

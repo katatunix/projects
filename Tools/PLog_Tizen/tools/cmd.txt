@@ -1,0 +1,1 @@
+ilmerge /out:$(TargetDir)PLog_NoDll.exe $(TargetPath) $(TargetDir)FastColoredTextBox.dll

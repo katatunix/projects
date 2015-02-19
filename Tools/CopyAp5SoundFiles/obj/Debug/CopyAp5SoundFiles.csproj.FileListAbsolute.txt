@@ -1,0 +1,16 @@
+E:\Projects\Kata\C#\CopyAp5SoundFiles\bin\Debug\CopyAp5SoundFiles.exe
+E:\Projects\Kata\C#\CopyAp5SoundFiles\bin\Debug\CopyAp5SoundFiles.pdb
+E:\Projects\Kata\C#\CopyAp5SoundFiles\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\Kata\C#\CopyAp5SoundFiles\obj\Debug\CopyAp5SoundFiles.Form1.resources
+E:\Projects\Kata\C#\CopyAp5SoundFiles\obj\Debug\CopyAp5SoundFiles.Properties.Resources.resources
+E:\Projects\Kata\C#\CopyAp5SoundFiles\obj\Debug\CopyAp5SoundFiles.csproj.GenerateResource.Cache
+E:\Projects\Kata\C#\CopyAp5SoundFiles\obj\Debug\CopyAp5SoundFiles.exe
+E:\Projects\Kata\C#\CopyAp5SoundFiles\obj\Debug\CopyAp5SoundFiles.pdb
+d:\Projects\C#\CopyAp5SoundFiles\obj\Debug\CopyAp5SoundFiles.exe
+d:\Projects\C#\CopyAp5SoundFiles\obj\Debug\CopyAp5SoundFiles.pdb
+d:\Projects\C#\CopyAp5SoundFiles\bin\Debug\CopyAp5SoundFiles.exe
+d:\Projects\C#\CopyAp5SoundFiles\bin\Debug\CopyAp5SoundFiles.pdb
+d:\Projects\C#\CopyAp5SoundFiles\obj\Debug\ResolveAssemblyReference.cache
+d:\Projects\C#\CopyAp5SoundFiles\obj\Debug\CopyAp5SoundFiles.Properties.Resources.resources
+d:\Projects\C#\CopyAp5SoundFiles\obj\Debug\CopyAp5SoundFiles.csproj.GenerateResource.Cache
+d:\Projects\C#\CopyAp5SoundFiles\obj\Debug\CopyAp5SoundFiles.FormMain.resources

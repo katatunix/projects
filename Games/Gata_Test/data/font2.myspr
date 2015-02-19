@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+
+<sprite name="HUD">
+
+<module x="31" y="68" w="25" h="27" /> <!-- A -->
+<module x="62" y="68" w="22" h="27" /> <!-- B -->
+<module x="91" y="67" w="22" h="27" /> <!-- C -->
+<module x="119" y="68" w="24" h="27" /> <!-- D -->
+<module x="150" y="68" w="20" h="27" /> <!-- E -->
+<module x="176" y="68" w="21" h="27" /> <!-- F -->
+<module x="202" y="68" w="24" h="27" /> <!-- G -->
+<module x="233" y="68" w="24" h="27" /> <!-- H -->
+
+<frames>
+	<frame>
+		<fmodule moduleIndex="0" xInFrame="0" yInFrame="0"> <!-- A -->
+		</fmodule>
+		<fmodule moduleIndex="1" xInFrame="0" yInFrame="0"> <!-- B -->
+		</fmodule>
+		<fmodule moduleIndex="2" xInFrame="0" yInFrame="-1"> <!-- C -->
+		</fmodule>
+		<fmodule moduleIndex="3" xInFrame="0" yInFrame="0"> <!-- D -->
+		</fmodule>
+		<fmodule moduleIndex="4" xInFrame="0" yInFrame="0"> <!-- E -->
+		</fmodule>
+		<fmodule moduleIndex="5" xInFrame="0" yInFrame="0"> <!-- F -->
+		</fmodule>
+		<fmodule moduleIndex="6" xInFrame="0" yInFrame="0"> <!-- G -->
+		</fmodule>
+		<fmodule moduleIndex="7" xInFrame="0" yInFrame="0"> <!-- H -->
+		</fmodule>
+	</frame>
+</frames>
+
+<anims>
+</anims>
+
+<charmap charSpace="2" lineSpace="10" spaceWidth="15">
+	<char>65</char>
+	<char>66</char>
+	<char>67</char>
+	<char>68</char>
+	<char>69</char>
+	<char>70</char>
+	<char>71</char>
+	<char>72</char>
+</charmap>
+
+</sprite>

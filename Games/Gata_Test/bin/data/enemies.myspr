@@ -1,0 +1,124 @@
+<?xml version="1.0" ?>
+
+<sprite>
+
+<module isset="true" x="8" y="8" w="32" h="32" cols="4" rows="3" spacex="8" spacey="8" /> <!-- Goomba -->
+
+<module isset="true" x="8" y="88" w="32" h="48" cols="11" rows="3" spacex="8" spacey="8" /> <!-- Koopa -->
+
+<frames>
+	<!-- Goomba -->
+	<frame isset="true" count="12" moduleIndexStart="0" moduleIndexStep="1"
+				xInFrameStart="0" yInFrameStart="0" xInFrameStep="0" yInFrameStep="0">
+	</frame>
+	
+	<map_frame index="2" name="GOOMBA_RED_DYING" />
+	<map_frame index="6" name="GOOMBA_BLUE_DYING" />
+	<map_frame index="10" name="GOOMBA_GRAY_DYING" />
+	
+	<map_frame index="3" name="GOOMBA_RED_THROWING" />
+	<map_frame index="7" name="GOOMBA_BLUE_THROWING" />
+	<map_frame index="11" name="GOOMBA_GRAY_THROWING" />
+	
+	<!-- Koopa -->
+	<frame isset="true" count="33" moduleIndexStart="12" moduleIndexStep="1"
+				xInFrameStart="0" yInFrameStart="0" xInFrameStep="0" yInFrameStep="0">
+	</frame>
+	
+	<map_frame index="22" name="KOOPA_GREEN_THROWING" />
+	<map_frame index="20" name="KOOPA_GREEN_NON_HEAD" />
+	
+	<map_frame index="33" name="KOOPA_RED_THROWING" />
+	<map_frame index="31" name="KOOPA_RED_NON_HEAD" />
+	
+	<map_frame index="44" name="KOOPA_BLUE_THROWING" />
+	<map_frame index="42" name="KOOPA_BLUE_NON_HEAD" />
+	
+</frames>
+
+<anims>
+	<!-- Goomba -->
+	<anim name="GOOMBA_RED" loopType="PINGPONG" delayNumber="5">
+		<aframe frameIndex="0" xInAnim="0" yInAnim="0" />
+		<aframe frameIndex="1" xInAnim="0" yInAnim="0" />
+	</anim>
+	
+	<anim name="GOOMBA_BLUE" loopType="PINGPONG" delayNumber="5">
+		<aframe frameIndex="4" xInAnim="0" yInAnim="0" />
+		<aframe frameIndex="5" xInAnim="0" yInAnim="0" />
+	</anim>
+	
+	<anim name="GOOMBA_GRAY" loopType="PINGPONG" delayNumber="5">
+		<aframe frameIndex="8" xInAnim="0" yInAnim="0" />
+		<aframe frameIndex="9" xInAnim="0" yInAnim="0" />
+	</anim>
+	
+	<!-- Koopa -->
+	<!-- RED -->
+	<anim name="KOOPA_RED_WALKING_RIGHT" loopType="PINGPONG" delayNumber="5">
+		<aframe frameIndex="23" xInAnim="0" yInAnim="0" />
+		<aframe frameIndex="24" xInAnim="0" yInAnim="0" />
+	</anim>
+	<anim name="KOOPA_RED_WALKING_LEFT" loopType="PINGPONG" delayNumber="5">
+		<aframe frameIndex="28" xInAnim="0" yInAnim="0" />
+		<aframe frameIndex="27" xInAnim="0" yInAnim="0" />
+	</anim>
+	<anim name="KOOPA_RED_FLYING_RIGHT" loopType="PINGPONG" delayNumber="5">
+		<aframe frameIndex="25" xInAnim="0" yInAnim="0" />
+		<aframe frameIndex="26" xInAnim="0" yInAnim="0" />
+	</anim>
+	<anim name="KOOPA_RED_FLYING_LEFT" loopType="PINGPONG" delayNumber="5">
+		<aframe frameIndex="30" xInAnim="0" yInAnim="0" />
+		<aframe frameIndex="29" xInAnim="0" yInAnim="0" />
+	</anim>
+	<anim name="KOOPA_RED_REBORN" loopType="PINGPONG" delayNumber="5">
+		<aframe frameIndex="31" xInAnim="0" yInAnim="0" />
+		<aframe frameIndex="32" xInAnim="0" yInAnim="0" />
+	</anim>
+	
+	<!-- GREEN -->
+	<anim name="KOOPA_GREEN_WALKING_RIGHT" loopType="PINGPONG" delayNumber="5">
+		<aframe frameIndex="12" xInAnim="0" yInAnim="0" />
+		<aframe frameIndex="13" xInAnim="0" yInAnim="0" />
+	</anim>
+	<anim name="KOOPA_GREEN_WALKING_LEFT" loopType="PINGPONG" delayNumber="5">
+		<aframe frameIndex="17" xInAnim="0" yInAnim="0" />
+		<aframe frameIndex="16" xInAnim="0" yInAnim="0" />
+	</anim>
+	<anim name="KOOPA_GREEN_FLYING_RIGHT" loopType="PINGPONG" delayNumber="5">
+		<aframe frameIndex="14" xInAnim="0" yInAnim="0" />
+		<aframe frameIndex="15" xInAnim="0" yInAnim="0" />
+	</anim>
+	<anim name="KOOPA_GREEN_FLYING_LEFT" loopType="PINGPONG" delayNumber="5">
+		<aframe frameIndex="19" xInAnim="0" yInAnim="0" />
+		<aframe frameIndex="18" xInAnim="0" yInAnim="0" />
+	</anim>
+	<anim name="KOOPA_GREEN_REBORN" loopType="PINGPONG" delayNumber="5">
+		<aframe frameIndex="20" xInAnim="0" yInAnim="0" />
+		<aframe frameIndex="21" xInAnim="0" yInAnim="0" />
+	</anim>
+	
+	<!-- BLUE -->
+	<anim name="KOOPA_BLUE_WALKING_RIGHT" loopType="PINGPONG" delayNumber="5">
+		<aframe frameIndex="34" xInAnim="0" yInAnim="0" />
+		<aframe frameIndex="35" xInAnim="0" yInAnim="0" />
+	</anim>
+	<anim name="KOOPA_BLUE_WALKING_LEFT" loopType="PINGPONG" delayNumber="5">
+		<aframe frameIndex="39" xInAnim="0" yInAnim="0" />
+		<aframe frameIndex="38" xInAnim="0" yInAnim="0" />
+	</anim>
+	<anim name="KOOPA_BLUE_FLYING_RIGHT" loopType="PINGPONG" delayNumber="5">
+		<aframe frameIndex="36" xInAnim="0" yInAnim="0" />
+		<aframe frameIndex="37" xInAnim="0" yInAnim="0" />
+	</anim>
+	<anim name="KOOPA_BLUE_FLYING_LEFT" loopType="PINGPONG" delayNumber="5">
+		<aframe frameIndex="41" xInAnim="0" yInAnim="0" />
+		<aframe frameIndex="40" xInAnim="0" yInAnim="0" />
+	</anim>
+	<anim name="KOOPA_BLUE_REBORN" loopType="PINGPONG" delayNumber="5">
+		<aframe frameIndex="42" xInAnim="0" yInAnim="0" />
+		<aframe frameIndex="43" xInAnim="0" yInAnim="0" />
+	</anim>
+</anims>
+
+</sprite>

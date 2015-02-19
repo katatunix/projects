@@ -1,0 +1,74 @@
+<wsdl:definitions
+		xmlns:impl='http://localhost/luxury'
+		xmlns:intf='http://localhost/luxury'
+		xmlns:wsdl='http://schemas.xmlsoap.org/wsdl/'
+		xmlns:wsdlsoap='http://schemas.xmlsoap.org/wsdl/soap/'
+		xmlns:xsd='http://www.w3.org/2001/XMLSchema'
+		targetNamespace='http://localhost/luxury'>
+
+	<wsdl:types>
+		<schema elementFormDefault='qualified'
+				xmlns:impl='http://localhost/luxury'
+				xmlns:intf='http://localhost/luxury'
+				xmlns:wsdl='http://schemas.xmlsoap.org/wsdl/'
+				xmlns="http://www.w3.org/2001/XMLSchema"
+				targetNamespace='http://localhost/luxury'>
+
+			<complexType name='reportRowType'>
+				<sequence>
+					<element name='productName'	type='xsd:string' />
+					<element name='unitPrice'	type='xsd:float' />
+					<element name='paidQty'		type='xsd:int' />
+				</sequence>
+			</complexType>
+
+			<complexType name="reportRowArrayType">
+				<complexContent>
+					<restriction base="SOAP-ENC:Array">
+						<attribute ref="SOAP-ENC:arrayType" wsdl:arrayType="reportRowType[]" />
+					</restriction>
+				</complexContent>
+			</complexType>
+
+		</schema>
+	</wsdl:types>
+
+	<wsdl:message name='reportRequest'>
+		<wsdl:part name='key'		type='xsd:string' />
+		<wsdl:part name='isRoom'	type='xsd:int' />
+		<wsdl:part name='fromDate'	type='xsd:string' />
+		<wsdl:part name='toDate'	type='xsd:string' />
+	</wsdl:message>
+
+	<wsdl:message name='reportResponse'>
+		<wsdl:part name='success' element='xsd:int' />
+		<wsdl:part name='report' element='impl:reportRowArrayType' />
+	</wsdl:message>
+
+	<wsdl:portType name='reportService'>
+		<wsdl:operation name='getReport'>
+			<wsdl:input name='reportRequest' message='impl:reportRequest' />
+			<wsdl:output name='reportResponse' message='impl:reportResponse' />
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name='reportServiceSoapBinding' type='impl:reportService'>
+		<wsdlsoap:binding transport='http://schemas.xmlsoap.org/soap/http' style='document' />
+		<wsdl:operation name='getReport'>
+			<wsdlsoap:operation soapAction='reportService#getReport' />
+			<wsdl:input name='reportRequest'>
+				<wsdlsoap:body use='literal' />
+			</wsdl:input>
+			<wsdl:output name='reportResponse'>
+				<wsdlsoap:body use='literal' />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name='reportService'>
+		<wsdl:port binding='impl:reportServiceSoapBinding' name='reportService'>
+			<wsdlsoap:address location='http://localhost/luxury/ws/mainWs/index' />
+		</wsdl:port>
+	</wsdl:service>
+
+</wsdl:definitions>

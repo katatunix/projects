@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\src">
+      <UniqueIdentifier>{f78a02c0-9d7a-4505-b076-01dd7b482e42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\auto_generated">
+      <UniqueIdentifier>{645f6a97-d779-4893-bd72-03d0811200c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\Entity">
+      <UniqueIdentifier>{0f8a0ee1-3ee3-42ff-abf1-30b6cd9f166d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\GameState">
+      <UniqueIdentifier>{66791bfd-a50a-4735-86c4-0ff843a269a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\Tile">
+      <UniqueIdentifier>{f833e070-f0eb-4879-9f64-270255f6a7cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\_win32">
+      <UniqueIdentifier>{1d44893a-bb61-495d-afaf-a1f5ea873582}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\_android">
+      <UniqueIdentifier>{991faaa1-53ff-4ff3-ba64-e8353817f5a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\Widget">
+      <UniqueIdentifier>{4e268b55-52e3-4fcc-87c1-08345b2ee954}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\CGame.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\auto_generated\images_define.cpp">
+      <Filter>Source Files\src\auto_generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\auto_generated\sprites_define.cpp">
+      <Filter>Source Files\src\auto_generated</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\GameObject.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\World.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\GameState\GS_InGame.cpp">
+      <Filter>Source Files\src\GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\GameState\GS_Logo.cpp">
+      <Filter>Source Files\src\GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Entity\Goomba.cpp">
+      <Filter>Source Files\src\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Tile\Map.cpp">
+      <Filter>Source Files\src\Tile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Tile\Background.cpp">
+      <Filter>Source Files\src\Tile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Entity\Player.cpp">
+      <Filter>Source Files\src\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Entity\Entity.cpp">
+      <Filter>Source Files\src\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Tile\NormalBrick.cpp">
+      <Filter>Source Files\src\Tile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Entity\Particle.cpp">
+      <Filter>Source Files\src\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Entity\InvisibleKiller.cpp">
+      <Filter>Source Files\src\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Entity\Koopa.cpp">
+      <Filter>Source Files\src\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\_win32\main.cpp">
+      <Filter>Source Files\src\_win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\_android\file_utils.c">
+      <Filter>Source Files\src\_android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\_android\jni_game.cpp">
+      <Filter>Source Files\src\_android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Widget\PlayingButtonWidget.cpp">
+      <Filter>Source Files\src\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Widget\NavButtonWidget.cpp">
+      <Filter>Source Files\src\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Tile\QuestionBrick.cpp">
+      <Filter>Source Files\src\Tile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Entity\Mushroom.cpp">
+      <Filter>Source Files\src\Entity</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\CGame.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\auto_generated\images_define.h">
+      <Filter>Source Files\src\auto_generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ImageManager.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\SpriteManager.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\auto_generated\sprites_define.h">
+      <Filter>Source Files\src\auto_generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\GameObject.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\World.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\auto_generated\game_objects_list.h">
+      <Filter>Source Files\src\auto_generated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\GameObjectPool.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\GameState\GS_InGame.h">
+      <Filter>Source Files\src\GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\GameState\GS_Logo.h">
+      <Filter>Source Files\src\GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Entity\Goomba.h">
+      <Filter>Source Files\src\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Tile\Map.h">
+      <Filter>Source Files\src\Tile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Tile\tile_define.h">
+      <Filter>Source Files\src\Tile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Tile\Background.h">
+      <Filter>Source Files\src\Tile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Entity\Entity.h">
+      <Filter>Source Files\src\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Entity\Player.h">
+      <Filter>Source Files\src\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Tile\TiledObject.h">
+      <Filter>Source Files\src\Tile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Tile\NormalBrick.h">
+      <Filter>Source Files\src\Tile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Entity\Particle.h">
+      <Filter>Source Files\src\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Entity\InvisibleKiller.h">
+      <Filter>Source Files\src\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Entity\Koopa.h">
+      <Filter>Source Files\src\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Widget\PlayingButtonWidget.h">
+      <Filter>Source Files\src\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Widget\NavButtonWidget.h">
+      <Filter>Source Files\src\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Tile\QuestionBrick.h">
+      <Filter>Source Files\src\Tile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Entity\Mushroom.h">
+      <Filter>Source Files\src\Entity</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

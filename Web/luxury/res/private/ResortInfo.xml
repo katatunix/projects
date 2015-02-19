@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<name>Ho Chi Minh City</name>
+	<address>123 Le Duan</address>
+	<phone>123456789</phone>
+	<isNational>1</isNational>
+</root>

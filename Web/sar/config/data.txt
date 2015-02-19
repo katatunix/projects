@@ -1,0 +1,276 @@
+-- phpMyAdmin SQL Dump
+-- version 2.10.3
+-- http://www.phpmyadmin.net
+-- 
+-- Host: localhost
+-- Generation Time: Apr 08, 2014 at 03:18 AM
+-- Server version: 5.0.51
+-- PHP Version: 5.2.6
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+-- 
+-- Database: `sar`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `account`
+-- 
+
+CREATE TABLE `account` (
+  `id` int(11) NOT NULL auto_increment,
+  `username` varchar(128) collate utf8_unicode_ci NOT NULL,
+  `password` varchar(128) collate utf8_unicode_ci NOT NULL,
+  `fullname` varchar(256) collate utf8_unicode_ci default NULL,
+  `gender` int(11) default NULL,
+  `dob` date default NULL,
+  `studentAisId` int(11) default NULL,
+  `role` int(11) NOT NULL,
+  `isActive` int(11) NOT NULL default '1',
+  PRIMARY KEY  (`id`),
+  UNIQUE KEY `studentAisId` (`studentAisId`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=17 ;
+
+-- 
+-- Dumping data for table `account`
+-- 
+
+INSERT INTO `account` VALUES (2, 'coordinator1', '123456', 'Lê Văn Tám', 0, '1987-09-19', NULL, 2, 1);
+INSERT INTO `account` VALUES (3, 'tutor1', '123456', 'Hoàng Dung', 1, '1990-08-10', NULL, 4, 1);
+INSERT INTO `account` VALUES (4, 'lecturer1', '123456', 'Hồng Thất Công', 0, '1970-04-30', NULL, 3, 1);
+INSERT INTO `account` VALUES (7, 'admin1', '123456', 'John Lennon', 0, '2014-04-28', NULL, 1, 1);
+INSERT INTO `account` VALUES (12, 'student44', '123456', NULL, NULL, NULL, 44, 0, 1);
+INSERT INTO `account` VALUES (13, 'student69', '123456', NULL, NULL, NULL, 69, 0, 1);
+INSERT INTO `account` VALUES (14, 'student199', '123456', NULL, NULL, NULL, 199, 0, 1);
+INSERT INTO `account` VALUES (15, 'student313', '123456', NULL, NULL, NULL, 313, 0, 1);
+INSERT INTO `account` VALUES (16, 'student22', '123456', NULL, NULL, NULL, 22, 0, 1);
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `labattendance`
+-- 
+
+CREATE TABLE `labattendance` (
+  `sessionId` int(11) NOT NULL,
+  `studentAisId` int(11) NOT NULL,
+  `isPresented` int(11) default NULL,
+  `reason` varchar(256) collate utf8_unicode_ci default NULL,
+  `reasonStatus` int(11) NOT NULL default '1' COMMENT '1: NEW, 2: APPROVED, 3: DENIED',
+  PRIMARY KEY  (`sessionId`,`studentAisId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 
+-- Dumping data for table `labattendance`
+-- 
+
+INSERT INTO `labattendance` VALUES (46, 69, 0, NULL, 1);
+INSERT INTO `labattendance` VALUES (47, 69, 0, 'Just test.', 1);
+INSERT INTO `labattendance` VALUES (49, 69, 0, NULL, 1);
+INSERT INTO `labattendance` VALUES (55, 69, 0, NULL, 1);
+INSERT INTO `labattendance` VALUES (57, 69, 0, NULL, 1);
+INSERT INTO `labattendance` VALUES (59, 44, 0, NULL, 1);
+INSERT INTO `labattendance` VALUES (59, 69, 0, NULL, 1);
+INSERT INTO `labattendance` VALUES (59, 199, 1, 'Hello World.', 1);
+INSERT INTO `labattendance` VALUES (59, 313, 1, NULL, 0);
+INSERT INTO `labattendance` VALUES (61, 199, NULL, 'Hôm nay trời nóng quá!', 2);
+INSERT INTO `labattendance` VALUES (62, 44, 1, NULL, 1);
+INSERT INTO `labattendance` VALUES (62, 199, 1, 'Chưa có bao giờ đẹp như hôm nay!', 1);
+INSERT INTO `labattendance` VALUES (62, 313, 1, NULL, 1);
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `lectureattendance`
+-- 
+
+CREATE TABLE `lectureattendance` (
+  `sessionId` int(11) NOT NULL,
+  `studentAisId` int(11) NOT NULL,
+  `isPresented` int(11) default NULL,
+  PRIMARY KEY  (`sessionId`,`studentAisId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 
+-- Dumping data for table `lectureattendance`
+-- 
+
+INSERT INTO `lectureattendance` VALUES (1, 313, 1);
+INSERT INTO `lectureattendance` VALUES (27, 44, 1);
+INSERT INTO `lectureattendance` VALUES (27, 69, 0);
+INSERT INTO `lectureattendance` VALUES (27, 199, 0);
+INSERT INTO `lectureattendance` VALUES (27, 313, 1);
+INSERT INTO `lectureattendance` VALUES (32, 69, 1);
+INSERT INTO `lectureattendance` VALUES (32, 313, 1);
+INSERT INTO `lectureattendance` VALUES (83, 22, 0);
+INSERT INTO `lectureattendance` VALUES (83, 44, 0);
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `registration`
+-- 
+
+CREATE TABLE `registration` (
+  `courseId` int(11) NOT NULL,
+  `studentAisId` int(11) NOT NULL,
+  `labGroup` int(11) default NULL,
+  PRIMARY KEY  (`courseId`,`studentAisId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 
+-- Dumping data for table `registration`
+-- 
+
+INSERT INTO `registration` VALUES (1, 22, 1);
+INSERT INTO `registration` VALUES (1, 69, 1);
+INSERT INTO `registration` VALUES (1, 313, 1);
+INSERT INTO `registration` VALUES (2, 22, 0);
+INSERT INTO `registration` VALUES (2, 199, 0);
+INSERT INTO `registration` VALUES (3, 22, 0);
+INSERT INTO `registration` VALUES (3, 44, 0);
+INSERT INTO `registration` VALUES (3, 69, 0);
+INSERT INTO `registration` VALUES (3, 313, 1);
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `room`
+-- 
+
+CREATE TABLE `room` (
+  `id` int(11) NOT NULL auto_increment,
+  `name` varchar(128) collate utf8_unicode_ci NOT NULL,
+  `rtype` int(11) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=9 ;
+
+-- 
+-- Dumping data for table `room`
+-- 
+
+INSERT INTO `room` VALUES (1, 'LECROOM1', 0);
+INSERT INTO `room` VALUES (2, 'LABROOM1', 1);
+INSERT INTO `room` VALUES (7, 'LECROOM2', 0);
+INSERT INTO `room` VALUES (8, 'LABROOM2', 1);
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `session`
+-- 
+
+CREATE TABLE `session` (
+  `id` int(11) NOT NULL auto_increment,
+  `startDatetime` datetime NOT NULL,
+  `minutes` int(11) NOT NULL,
+  `isActive` int(11) NOT NULL default '1',
+  `stype` int(11) NOT NULL,
+  `roomId` int(11) NOT NULL,
+  `teacherId` int(11) NOT NULL,
+  `courseId` int(11) NOT NULL,
+  `labGroup` int(11) default NULL,
+  PRIMARY KEY  (`id`),
+  KEY `roomId` (`roomId`),
+  KEY `teacherId` (`teacherId`),
+  KEY `courseId` (`courseId`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=84 ;
+
+-- 
+-- Dumping data for table `session`
+-- 
+
+INSERT INTO `session` VALUES (1, '2014-04-27 19:20:00', 33, 1, 0, 1, 4, 3, 0);
+INSERT INTO `session` VALUES (2, '2014-05-01 00:00:00', 45, 1, 1, 2, 3, 3, 0);
+INSERT INTO `session` VALUES (3, '2014-04-07 00:00:00', 30, 1, 1, 2, 3, 3, 0);
+INSERT INTO `session` VALUES (4, '2014-04-09 00:00:00', 30, 1, 1, 2, 3, 3, 0);
+INSERT INTO `session` VALUES (6, '2014-04-14 00:00:00', 30, 1, 1, 2, 3, 3, 0);
+INSERT INTO `session` VALUES (7, '2014-04-16 00:00:00', 30, 1, 1, 2, 3, 3, 0);
+INSERT INTO `session` VALUES (8, '2014-04-18 00:00:00', 30, 1, 1, 2, 3, 3, 0);
+INSERT INTO `session` VALUES (9, '2014-04-21 00:00:00', 30, 1, 1, 2, 3, 3, 0);
+INSERT INTO `session` VALUES (10, '2014-04-23 19:00:00', 30, 1, 0, 1, 4, 3, 0);
+INSERT INTO `session` VALUES (11, '2014-04-25 00:00:00', 30, 1, 1, 2, 3, 3, 0);
+INSERT INTO `session` VALUES (12, '2014-04-28 00:00:00', 30, 1, 1, 2, 3, 3, 0);
+INSERT INTO `session` VALUES (13, '2014-04-30 00:00:00', 30, 1, 1, 2, 3, 3, 0);
+INSERT INTO `session` VALUES (16, '2014-04-07 18:00:00', 30, 1, 1, 2, 3, 3, 0);
+INSERT INTO `session` VALUES (17, '2014-04-09 18:00:00', 30, 1, 1, 2, 3, 3, 0);
+INSERT INTO `session` VALUES (19, '2014-04-14 18:00:00', 30, 1, 1, 2, 3, 3, 0);
+INSERT INTO `session` VALUES (20, '2014-04-16 18:00:00', 30, 1, 1, 2, 3, 3, 0);
+INSERT INTO `session` VALUES (21, '2014-04-18 18:00:00', 30, 1, 1, 2, 3, 3, 0);
+INSERT INTO `session` VALUES (22, '2014-04-21 18:00:00', 30, 1, 1, 2, 3, 3, 0);
+INSERT INTO `session` VALUES (23, '2014-04-23 18:00:00', 30, 1, 1, 2, 3, 3, 0);
+INSERT INTO `session` VALUES (25, '2014-04-28 18:00:00', 30, 1, 1, 2, 3, 3, 0);
+INSERT INTO `session` VALUES (27, '2014-04-22 09:00:00', 60, 0, 0, 7, 4, 2, 0);
+INSERT INTO `session` VALUES (28, '2014-05-21 00:00:00', 30, 1, 0, 1, 4, 1, 0);
+INSERT INTO `session` VALUES (29, '2014-05-28 00:00:00', 30, 1, 0, 1, 4, 1, 0);
+INSERT INTO `session` VALUES (31, '2014-05-14 14:10:00', 30, 1, 0, 7, 4, 1, 0);
+INSERT INTO `session` VALUES (32, '2014-05-01 09:00:00', 30, 1, 0, 7, 4, 1, 0);
+INSERT INTO `session` VALUES (34, '2014-05-06 09:00:00', 30, 1, 0, 7, 4, 1, 0);
+INSERT INTO `session` VALUES (35, '2014-05-08 09:00:00', 30, 1, 0, 7, 4, 1, 0);
+INSERT INTO `session` VALUES (37, '2014-05-13 09:00:00', 30, 1, 0, 7, 4, 1, 0);
+INSERT INTO `session` VALUES (38, '2014-05-15 09:00:00', 30, 1, 0, 7, 4, 1, 0);
+INSERT INTO `session` VALUES (39, '2014-05-17 09:00:00', 30, 1, 0, 7, 4, 1, 0);
+INSERT INTO `session` VALUES (40, '2014-05-20 09:00:00', 30, 1, 0, 7, 4, 1, 0);
+INSERT INTO `session` VALUES (41, '2014-05-22 09:00:00', 30, 1, 0, 7, 4, 1, 0);
+INSERT INTO `session` VALUES (42, '2014-05-24 09:00:00', 30, 1, 0, 7, 4, 1, 0);
+INSERT INTO `session` VALUES (43, '2014-05-27 09:00:00', 30, 1, 0, 7, 4, 1, 0);
+INSERT INTO `session` VALUES (44, '2014-05-29 09:00:00', 30, 1, 0, 7, 4, 1, 0);
+INSERT INTO `session` VALUES (45, '2014-05-31 09:00:00', 30, 1, 0, 7, 4, 1, 0);
+INSERT INTO `session` VALUES (46, '2014-06-02 14:00:00', 60, 1, 1, 2, 3, 2, 2);
+INSERT INTO `session` VALUES (47, '2014-06-04 14:00:00', 60, 1, 1, 2, 3, 2, 2);
+INSERT INTO `session` VALUES (49, '2014-06-09 14:00:00', 60, 1, 1, 2, 3, 2, 2);
+INSERT INTO `session` VALUES (50, '2014-06-11 14:00:00', 60, 1, 1, 2, 3, 2, 2);
+INSERT INTO `session` VALUES (51, '2014-06-12 14:00:00', 60, 1, 1, 2, 3, 2, 2);
+INSERT INTO `session` VALUES (55, '2014-06-23 14:00:00', 60, 1, 1, 2, 3, 2, 2);
+INSERT INTO `session` VALUES (57, '2014-06-26 14:00:00', 60, 1, 1, 2, 3, 2, 2);
+INSERT INTO `session` VALUES (58, '2014-06-30 14:00:00', 60, 1, 1, 2, 3, 2, 2);
+INSERT INTO `session` VALUES (59, '2014-04-04 12:00:00', 60, 1, 1, 8, 3, 2, 1);
+INSERT INTO `session` VALUES (60, '2014-04-30 00:00:00', 30, 1, 0, 1, 4, 1, 0);
+INSERT INTO `session` VALUES (61, '2014-05-01 06:00:00', 30, 1, 1, 2, 3, 2, 1);
+INSERT INTO `session` VALUES (62, '2014-05-02 06:00:00', 30, 1, 1, 2, 3, 2, 1);
+INSERT INTO `session` VALUES (63, '2014-05-05 06:00:00', 30, 1, 1, 2, 3, 2, 1);
+INSERT INTO `session` VALUES (64, '2014-05-06 06:00:00', 30, 1, 1, 2, 3, 2, 1);
+INSERT INTO `session` VALUES (65, '2014-05-07 06:00:00', 30, 1, 1, 2, 3, 2, 1);
+INSERT INTO `session` VALUES (66, '2014-05-08 06:00:00', 30, 1, 1, 2, 3, 2, 1);
+INSERT INTO `session` VALUES (67, '2014-05-09 06:00:00', 30, 1, 1, 2, 3, 2, 1);
+INSERT INTO `session` VALUES (68, '2014-05-12 06:00:00', 30, 1, 1, 2, 3, 2, 1);
+INSERT INTO `session` VALUES (69, '2014-05-13 06:00:00', 30, 1, 1, 2, 3, 2, 1);
+INSERT INTO `session` VALUES (70, '2014-05-14 06:00:00', 30, 1, 1, 2, 3, 2, 1);
+INSERT INTO `session` VALUES (71, '2014-05-15 06:00:00', 30, 1, 1, 2, 3, 2, 1);
+INSERT INTO `session` VALUES (72, '2014-05-16 06:00:00', 30, 1, 1, 2, 3, 2, 1);
+INSERT INTO `session` VALUES (73, '2014-05-19 06:00:00', 30, 1, 1, 2, 3, 2, 1);
+INSERT INTO `session` VALUES (74, '2014-05-20 06:00:00', 30, 1, 1, 2, 3, 2, 1);
+INSERT INTO `session` VALUES (75, '2014-05-21 06:00:00', 30, 1, 1, 2, 3, 2, 1);
+INSERT INTO `session` VALUES (76, '2014-05-22 06:00:00', 30, 1, 1, 2, 3, 2, 1);
+INSERT INTO `session` VALUES (77, '2014-05-23 06:00:00', 30, 1, 1, 2, 3, 2, 1);
+INSERT INTO `session` VALUES (78, '2014-05-26 06:00:00', 30, 1, 1, 2, 3, 2, 1);
+INSERT INTO `session` VALUES (79, '2014-05-27 06:00:00', 30, 1, 1, 2, 3, 2, 1);
+INSERT INTO `session` VALUES (80, '2014-05-28 06:00:00', 30, 1, 1, 2, 3, 2, 1);
+INSERT INTO `session` VALUES (81, '2014-05-29 06:00:00', 30, 1, 1, 2, 3, 2, 1);
+INSERT INTO `session` VALUES (82, '2014-05-30 06:00:00', 30, 1, 1, 2, 3, 2, 1);
+INSERT INTO `session` VALUES (83, '2014-04-03 16:00:00', 30, 1, 0, 1, 4, 1, 0);
+
+-- 
+-- Constraints for dumped tables
+-- 
+
+-- 
+-- Constraints for table `labattendance`
+-- 
+ALTER TABLE `labattendance`
+  ADD CONSTRAINT `labattendance_ibfk_1` FOREIGN KEY (`sessionId`) REFERENCES `session` (`id`);
+
+-- 
+-- Constraints for table `lectureattendance`
+-- 
+ALTER TABLE `lectureattendance`
+  ADD CONSTRAINT `lectureattendance_ibfk_1` FOREIGN KEY (`sessionId`) REFERENCES `session` (`id`);
+
+-- 
+-- Constraints for table `session`
+-- 
+ALTER TABLE `session`
+  ADD CONSTRAINT `session_ibfk_1` FOREIGN KEY (`roomId`) REFERENCES `room` (`id`),
+  ADD CONSTRAINT `session_ibfk_2` FOREIGN KEY (`teacherId`) REFERENCES `account` (`id`);

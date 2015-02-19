@@ -1,0 +1,9 @@
+E:\Projects\Kata\FStore\XepBiMau\res\ball.gif
+E:\Projects\Kata\FStore\XepBiMau\res\num.gif
+E:\Projects\Kata\FStore\XepBiMau\res\undo.gif
+E:\Projects\Kata\FStore\XepBiMau\res\home.gif
+E:\Projects\Kata\FStore\XepBiMau\res\font_bm_large.gif
+E:\Projects\Kata\FStore\XepBiMau\res\font_bm_medium.gif
+E:\Projects\Kata\FStore\XepBiMau\res\music.mid
+E:\Projects\Kata\FStore\XepBiMau\res\move.mid
+E:\Projects\Kata\FStore\XepBiMau\res\score.mid

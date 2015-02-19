@@ -1,0 +1,5 @@
+  <!-- use FileSpecific if you want add specific compile flags for a source file -->        
+        <FileSpecific>
+            <File Name="" CFLAGS=""/>
+            <File Name="" CFLAGS=""/>
+        </FileSpecific>

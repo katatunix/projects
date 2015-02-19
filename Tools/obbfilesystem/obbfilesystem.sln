@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "obbfilesystem", "obbfilesystem\obbfilesystem.vcproj", "{81C6E2E2-2BC8-46C9-ABF6-98DF33CE30DA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test\test.vcproj", "{E7251738-B0F6-4988-9443-CD89853B3FCA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{81C6E2E2-2BC8-46C9-ABF6-98DF33CE30DA} = {81C6E2E2-2BC8-46C9-ABF6-98DF33CE30DA}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81C6E2E2-2BC8-46C9-ABF6-98DF33CE30DA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{81C6E2E2-2BC8-46C9-ABF6-98DF33CE30DA}.Debug|Win32.Build.0 = Debug|Win32
+		{81C6E2E2-2BC8-46C9-ABF6-98DF33CE30DA}.Release|Win32.ActiveCfg = Release|Win32
+		{81C6E2E2-2BC8-46C9-ABF6-98DF33CE30DA}.Release|Win32.Build.0 = Release|Win32
+		{E7251738-B0F6-4988-9443-CD89853B3FCA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E7251738-B0F6-4988-9443-CD89853B3FCA}.Debug|Win32.Build.0 = Debug|Win32
+		{E7251738-B0F6-4988-9443-CD89853B3FCA}.Release|Win32.ActiveCfg = Release|Win32
+		{E7251738-B0F6-4988-9443-CD89853B3FCA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

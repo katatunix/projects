@@ -1,0 +1,168 @@
+* {
+	padding: 0;
+	margin: 0;
+} 
+
+body {
+	background: #121212;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	color: #ccc;
+}
+
+img { border: none; }
+a { color: #FAF391; text-decoration: none; }
+a:hover { text-decoration: underline; color : #fff; }
+
+#wrap {
+	width: 960px;
+	background: #222;
+	margin: 0 auto;
+}
+.header {
+	padding-top: 20px;
+	height: 80px;
+	background: #333;
+}
+.header h1 {
+	font-size: 34px;
+	font-weight: 100;
+	padding: 8px 0 12px 10px;
+	letter-spacing: -1px;
+}
+.header h1 a {
+	color: #FAF391;
+	text-decoration: none;
+}
+.header h1 a:hover { 
+	color: #fff;
+	text-decoration: none;
+}
+.header h2 {
+	font-size: 17px;
+	font-weight: 100;
+	color: #fff;
+	padding-left: 12px;
+}
+.header #menu {
+	text-align: right;
+	padding-right: 15px;
+}
+
+.header #menu #hello {
+	padding-right: 10px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.navigation { 
+	padding-top: 20px;
+	float : left ;
+	list-style: none;
+	width: 200px;
+	font-size: 1.2em;
+}
+.navigation ul { list-style-type: none; }
+.navigation li { 
+	padding: 0;
+	margin: 0;
+}
+.navigation a, 
+.navigation a:visited {
+	display: block;
+	height: 25px;
+	line-height: 25px;
+	padding: 0 10px 0 10px;
+	color: #ffffff;
+	background: #222;
+	text-decoration: none;
+	border-bottom: 1px solid #171B20;
+}
+.navigation a:hover {
+	color: #000;
+	background-color: #FAF391;
+}
+
+.content {
+	padding: 10px 10px 10px 0;
+	float: right;
+	width: 740px;
+}
+.content h2 {
+	color: #FAF391;
+	font-size: 28px;
+	letter-spacing: -1px;
+	font-weight: 100;
+	padding: 15px 0 20px 0;
+}
+.content h2 a { }
+.content h2 a:hover { text-decoration: none; }
+
+.footer {
+	padding: 10px;
+	font-size: 11px;
+	color: #aaa;
+	text-align: center;
+	background: #333;
+}
+.footer a {
+	color: #FAF391;
+}
+
+input {
+	padding: 3px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+textarea {
+	padding: 3px;
+}
+
+.memberInfoTextBox {
+	width: 250px;
+}
+
+.errorMessage {
+	color: lightcoral;
+}
+
+.infoMessage {
+	color: lightgreen;
+}
+
+.datePicker, .datePicker input {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.reportHeaderReported {
+	background-color: darkgreen;
+	padding: 5px;
+	font-size: 1.2em;
+}
+
+.reportHeaderNotReported {
+	background-color: darkred;
+	padding: 5px;
+	font-size: 1.2em;
+}
+
+.reportContent {
+	margin-left: 20px;
+}
+
+.reportDeleteButton {
+	text-align: center;
+}
+
+.submitReportTextArea {
+	width: 100%;
+	height: 100px;
+}
+
+textarea {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}

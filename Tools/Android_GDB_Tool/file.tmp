@@ -1,0 +1,3 @@
+set solib-search-path dev
+file app_process
+target remote :12345

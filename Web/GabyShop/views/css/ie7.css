@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Internet Explorer 7 */
+
+cart-counter {
+	background:none;
+	color:#101010;
+}
+
+#collection {
+	width:auto;
+}
+
+#index-page #content h2 {
+	color:#fff !important;
+}
+
+.tooltip {
+	zoom:1;
+}
