@@ -1,1 +1,0 @@
-Remember to select x86 before build.

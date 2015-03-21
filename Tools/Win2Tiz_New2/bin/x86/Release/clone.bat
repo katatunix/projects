@@ -1,1 +1,0 @@
-copy Win2Tiz.exe Win2Tiz_Server.exe
