@@ -1,0 +1,15 @@
+[user]
+	name = katatunix
+	email = katatunix@gmail.com
+[core]
+	autocrlf = true
+	excludesfile = C:\\Users\\katat_000\\Documents\\gitignore_global.txt
+	editor = notepad++ -multiInst -notabbar -nosession -noPlugin
+[alias]
+	logg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) %C(bold green)%ai%C(reset)%C(bold yellow)%d%C(reset) %C(white)%s%C(reset) %C(blue)%an%C(reset)'
+	ck = checkout
+	br = branch
+	stt = status
+	rs = reset
+[credential]
+	helper = wincred
