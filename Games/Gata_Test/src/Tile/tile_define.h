@@ -1,9 +1,0 @@
-#ifndef _TILE_DEFINE_H_
-#define _TILE_DEFINE_H_
-
-#define MAX_MAP_COLS_NUMBER		128
-#define MAX_MAP_ROWS_NUMBER		15
-#define MAX_MAP_LAYERS_NUMBER	4
-#define MAX_MAP_STRING_LENGTH	128
-
-#endif

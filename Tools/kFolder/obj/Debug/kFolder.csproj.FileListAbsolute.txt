@@ -1,0 +1,8 @@
+D:\Projects\projects\Tools\kFolder\bin\Debug\kFolder.exe
+D:\Projects\projects\Tools\kFolder\bin\Debug\kFolder.pdb
+D:\Projects\projects\Tools\kFolder\obj\Debug\kFolder.csprojResolveAssemblyReference.cache
+D:\Projects\projects\Tools\kFolder\obj\Debug\kFolder.kFolderFrm.resources
+D:\Projects\projects\Tools\kFolder\obj\Debug\kFolder.Properties.Resources.resources
+D:\Projects\projects\Tools\kFolder\obj\Debug\kFolder.csproj.GenerateResource.Cache
+D:\Projects\projects\Tools\kFolder\obj\Debug\kFolder.exe
+D:\Projects\projects\Tools\kFolder\obj\Debug\kFolder.pdb
